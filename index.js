@@ -31,7 +31,7 @@ app.get("/",(req,res)=>{
 
 
 // running server
-app.listen(3001,async(req,res)=>{
+app.listen(process.env.port,async(req,res)=>{
     try {
         await connection
         console.log("running on Mongo Atlas")
